@@ -1,0 +1,15 @@
+.app__table {
+  margin-top: 1.5em;
+  width: 90%;
+  max-width: 360px;
+  text-align: center;
+  border: 1px solid white;
+  background-color: var(--color-form-bg);
+  border: 2px solid var(--color-border);
+  font-size: 0.9rem;
+}
+
+th, td {
+  border: 1px solid white;
+  border: 2px solid var(--color-border);
+}

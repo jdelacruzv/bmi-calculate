@@ -1,3 +1,5 @@
+import styles from "./Table.module.css";
+
 const bmi = [
 	{ id: 0, color: "hotpink", detail: "Bajo peso", female: "< 20", male: "< 20" },
 	{ id: 1, color: "blue", detail: "Normal", female: "20 - 23.9", male: "20 - 24.9" },
@@ -8,7 +10,7 @@ const bmi = [
 
 const Table = () => {
 	return (
-		<table className="app__table">
+		<table className={styles.app__table}>
 			<thead>
 				<tr>
 					<th>Color</th>

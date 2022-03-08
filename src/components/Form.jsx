@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from "react";
+import styles from "./Form.module.css";
 
 const Form = () => {
 	const weightRef = useRef(null);
@@ -31,12 +32,12 @@ const Form = () => {
 	}, []);
 
 	return (
-		<form className="app__form" onSubmit={(e) => getResultBmi(e)}>
-			<label className="label__title" htmlFor="weight">
+		<form className={styles.app__form} onSubmit={(e) => getResultBmi(e)}>
+			<label className={styles.label__title} htmlFor="weight">
 				Peso (kg)
 			</label>
 			<input
-				className="input__box"
+				className={styles.input__box}
 				type="number"
 				id="weight"
 				name="weight"
@@ -45,11 +46,11 @@ const Form = () => {
 				ref={weightRef}
 			/>
 
-			<label className="label__title" htmlFor="height">
+			<label className={styles.label__title} htmlFor="height">
 				Altura (cm)
 			</label>
 			<input
-				className="input__box"
+				className={styles.input__box}
 				type="number"
 				id="height"
 				name="height"
@@ -58,10 +59,10 @@ const Form = () => {
 				ref={heightRef}
 			/>
 
-			<div className="sex">
-				<label className="label__title">Sexo</label>
+			<div className={styles.sex}>
+				<label className={styles.label__title}>Sexo</label>
 				<select
-					className="sex__select"
+					className={styles.sex__select}
 					id="gender"
 					name="gender"
 					ref={sexSelectRef}
@@ -72,13 +73,13 @@ const Form = () => {
 				</select>
 			</div>
 
-			<button className="btn-calculate" type="submit">
+			<button className={styles.btn__calculate} type="submit">
 				Calcular
 			</button>
 
-			<div className="result">
-				<p className="result__text">{`IMC => ${bmi.toFixed(1)}`}</p>
-				<button className="result__circle"></button>
+			<div className={styles.result}>
+				<p className={styles.result__text}>{`IMC => ${bmi.toFixed(1)}`}</p>
+				<button className={styles.result__circle}></button>
 			</div>
 		</form>
 	);

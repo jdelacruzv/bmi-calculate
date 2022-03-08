@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "../App.css"
+import styles from "./Header.module.css"
 
 const Header = () => {	
 	const [theme, setTheme] = useState(
@@ -23,9 +23,9 @@ const Header = () => {
 	};
 	
 	return (
-		<header className="app__header">
-			<h1 className="header__title">Calcular IMC</h1>
-			<button className="btn-toggle" onClick={() => handleThemeColor()}>
+		<header className={styles.app__header}>
+			<h1 className={styles.header__title}>Calcular IMC</h1>
+			<button className={styles.btn__toggle} onClick={() => handleThemeColor()}>
 				<img src="/mode.svg" alt="mode ligth" title={`Modo ${theme}`} />
 			</button>
 		</header>
