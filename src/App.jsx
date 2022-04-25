@@ -1,11 +1,11 @@
 import Form from "./components/Form";
 import Header from "./components/Header";
 import Table from "./components/Table";
-import styles from "./App.module.css";
+import "./styles/app.css";
 
 const App = () => {
 	return (
-		<div className={styles.app}>
+		<div className="app">
 			<Header />
 			<Form />
 			<Table />

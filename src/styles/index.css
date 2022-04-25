@@ -4,10 +4,10 @@
   --color-bg: #16161A;
   --color-form-bg: #242629;
   --color-border: #010101;
-  --color-input-bg: #D6D6D5;
-  --color-font: #FFFFFE; 
-  --color-btn-bg: #0B742A;
-  --color-btn-bg-hover: #2CA44F;
+  --color-input-bg: #eeeeee;
+  --color-font: #ffffff; 
+  --color-btn-bg: #007bff;
+  --color-btn-bg-hover: #0069D9;
 }
 
 * {
@@ -26,4 +26,5 @@ body {
 body[data-theme="light"] {
   --color-bg: #FFFFFF;
   --color-font: #16161A;
+  --color-form-bg: #9ba4b1;
 }
