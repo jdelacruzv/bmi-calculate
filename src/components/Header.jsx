@@ -25,9 +25,14 @@ const Header = () => {
 	return (
 		<header className={styles.app__header}>
 			<h1 className={styles.header__title}>Calcular IMC</h1>
-			<button className={styles.btn__toggle} onClick={() => handleThemeColor()}>
-				<img src="/mode.svg" alt="mode ligth" title={`Modo ${theme}`} />
-			</button>
+			<figure className={styles.btn__toggle} onClick={() => handleThemeColor()}>
+				<img 
+					className={styles.btn__toggle__img} 
+					src="/mode.png" 
+					alt="mode ligth" 
+					title={`Modo ${theme}`} 
+				/>
+			</figure>
 		</header>
 	);
 };

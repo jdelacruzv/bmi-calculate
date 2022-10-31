@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 2rem 0;
+  margin: 1rem 0 1.5rem;
 }
 
 .header__title {
@@ -14,15 +14,18 @@
 
 .btn__toggle {
   width: 40px;
-  height: 40px;
+  height: auto;
   border-radius: 50%;
-  border: 3px solid #010101;
-  background-color: #ffffff;
   margin: 0;
   cursor: pointer;
+  will-change: filter;
 }
 
 .btn__toggle:hover {
-  background-color: var(--color-btn-bg-hover);
-  transition: background-color 0.3s ease-out;
+  filter: drop-shadow(0 0 2rem var(--color-btn-mode));
+}
+
+.btn__toggle__img {
+  width: 100%;
+  height: auto;
 }
