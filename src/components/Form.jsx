@@ -40,9 +40,7 @@ const Form = () => {
 				min="0"
 				onChange={(ev) => setHeigthInput(ev.target.value)}
 			/>
-			<button className={styles.btn__calculate} type="submit">
-				Calcular
-			</button>
+			<button className={styles.btn__calulate} type="submit">Calcular</button>
 			<div className={styles.result}>
 				<p className={styles.result__text}>{`IMC = ${bmi}`}</p>
 				<RoundButton value={bmi} />

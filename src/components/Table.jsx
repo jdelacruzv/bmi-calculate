@@ -42,7 +42,7 @@ const Table = () => {
 			<tbody>
 				{BMI.map(({ id, color, category, bmi }) => (
 					<tr key={id}>
-						<td style={{ backgroundColor: `${color}` }}></td>
+						<td style={{backgroundColor: `${color}`}}></td>
 						<td>{category}</td>
 						<td>{bmi}</td>
 					</tr>

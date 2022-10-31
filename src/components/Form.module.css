@@ -5,9 +5,9 @@
   flex-direction: column;
   justify-content: center;
   background-color: var(--color-form-bg);
+  border: 3px solid var(--color-border);
   border-radius: 10px;
-  border: 1px solid var(--color-border);
-  padding: 1em;
+  padding: 1.5rem;
 }
 
 .label__title {
@@ -16,39 +16,38 @@
 }
 
 .input__box {
-  height: 2em;
+  height: 2rem;
   width: 100%;
+  margin: .3rem 0 1rem;
+  padding: 1rem .5rem;
   font-size: 1rem;
-  border-radius: 3px;
-  padding: 0 0.4rem;
-  border: 1px solid var(--color-input-bg);
   background-color: var(--color-input-bg);
-  margin: 0.3em 0 1em;
+  border: 3px solid var(--color-border);
+  border-radius: 5px;
 }
 
-.input__box:focus,
-.btn-calculate:focus {
+.input__box:focus {
   outline: 1px solid var(--color-border);
 }
 
-.btn__calculate {
-  font-size: 1.2rem;
+.btn__calulate {
+  font-size: 1.35rem;
   font-weight: bold;
-  padding: 0.5em;
-  margin: 0.5em 0 1em;
+  align-items: center;
+  padding: .6rem;
+  margin: .5rem 0 1rem;
   background-color: var(--color-btn-bg);
-  color: #FFFFFF;
-  border: 1px solid var(--color-btn-bg);
+  color: var(--color-font);
+	border: 3px solid var(--color-border);
   border-radius: 5px;
   cursor: pointer;
 }
 
-.btn__calculate:hover { 
+.btn__calulate:hover { 
   background-color: var(--color-btn-bg-hover);
-  border: 1px solid var(--color-btn-bg-hover);
 }
 
-.btn__calculate:focus { 
+.btn__calulate:focus { 
   outline: none;
 }
 
@@ -60,8 +59,8 @@
 
 .result__text {
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-weight: bold;
-  padding: 0.3em;
+  padding: .3rem;
   margin: 0;
 }

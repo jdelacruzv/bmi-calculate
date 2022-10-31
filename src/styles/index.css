@@ -1,13 +1,13 @@
 @import "./normalize.css";
 
 :root {
-  --color-bg: #16161A;
+  --color-bg: #16161a;
   --color-form-bg: #242629;
   --color-border: #010101;
   --color-input-bg: #eeeeee;
   --color-font: #ffffff; 
-  --color-btn-bg: #007bff;
-  --color-btn-bg-hover: #0069D9;
+  --color-btn-bg: #7f5af0;;
+  --color-btn-bg-hover: #2CB67D;
 }
 
 * {
@@ -24,7 +24,7 @@ body {
 
 /* tema light */
 body[data-theme="light"] {
-  --color-bg: #FFFFFF;
-  --color-font: #16161A;
-  --color-form-bg: #9ba4b1;
+  --color-bg: #fffffe;
+  --color-font: #16161a;
+  --color-form-bg: #94a1b2
 }

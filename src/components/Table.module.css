@@ -1,13 +1,14 @@
 .app__table {
   width: 100%;
   max-width: 320px;
-  margin-top: 2.5em;
+  margin-top: 2rem;
   text-align: center;
   background-color: var(--color-form-bg);
   border: 2px solid var(--color-border);
-  font-size: 0.9rem;
+  font-size: .9rem;
 }
 
 th, td {
   border: 2px solid var(--color-border);
+  padding: .2rem 0;
 }
