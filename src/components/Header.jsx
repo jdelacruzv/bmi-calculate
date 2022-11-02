@@ -28,7 +28,7 @@ const Header = () => {
 			<figure className={styles.btn__toggle} onClick={() => handleThemeColor()}>
 				<img 
 					className={styles.btn__toggle__img} 
-					src="/light.png" 
+					src="../../light.png" 
 					alt="mode ligth" 
 					title={`Modo ${theme}`} 
 				/>
