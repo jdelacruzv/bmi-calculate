@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import styles from "./Header.module.css"
+import styles from "./Header.module.css";
+import light from "/light.png";
 
 const Header = () => {	
 	const [theme, setTheme] = useState(
@@ -28,7 +29,7 @@ const Header = () => {
 			<figure className={styles.btn__toggle} onClick={() => handleThemeColor()}>
 				<img 
 					className={styles.btn__toggle__img} 
-					src="/light.png" 
+					src={light} 
 					alt="mode ligth" 
 					title={`Modo ${theme}`} 
 				/>
